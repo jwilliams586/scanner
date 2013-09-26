@@ -1,0 +1,16 @@
+EOFtk
+BEGINtk
+ENDtk
+THENtk
+IFtk
+LOOPtk
+VARtk
+INTtk
+FLOATtk
+DOtk
+SCANFtk
+PRINTFtk
+VOIDtk
+RETURNtk
+DUMMYtk
+PROGRAMtk
