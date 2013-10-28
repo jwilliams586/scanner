@@ -1,11 +1,11 @@
-# first keywords separated by spaces then by delimiters then by operators #
+& first keywords separated by spaces then by delimiters then by operators 
 begin end then if loop var int float do scanf printf void return dummy program.begin=end:then==if<loop>var!int+float-do*scanf/printf%void>=return<=dummy ifbegin.end(then)if,loop{var}int;float[do]scanf printf void return dummy program
 
-# now ids separated by spaces then by operators then by delimiters #
+& now ids separated by spaces then by operators then by delimiters
 xyz x123 number i i1234 ifif iff
 xx+y=z==xx < sum <= i >= j
 xx(xx)[xx]xx{xx}.,;
 
-#now numbers in various contexts #
+&now numbers in various contexts
 123+25=148
 -3+3=0

@@ -101,24 +101,38 @@ tokenType scanner(FILE *fp, int line)
 	     currentChar = 'e';
 	  }
 
-	  else if (currentChar == '#')
+	  else if (currentChar == '&')
 	  {
 		 ungetc(origLook, fp);
          currentChar = getc(fp);
-		 while(currentChar != '#')
+		 while(currentChar != '\n')
 		 {
 			  currentChar = getc(fp);
 		 }
 		 currentChar = 'w';
 		 lookahead = tolower(getc(fp));
 		 origLook = lookahead;
+		 line++;
 	  }
 
 	  else if(isspace(currentChar))
 	  {
-		 if(currentChar == '\n')
-		 {
+		// if(currentChar == '\n')
+		// {
 			currentChar = 'w';
+		// }
+	  }
+
+	  else if(currentChar == '_')
+	  {
+		 if(state - 1 == 0)
+		 {
+			//Error IDtk cannot start with '_'
+			printf("Error!! Char %c on line %d can't start ID with '_'!\n", currentChar, line);
+			exit(0);
+         } else {
+			currentString[k++] = currentChar;
+			currentChar = 'l';
 		 }
 	  }
 
@@ -146,7 +160,7 @@ tokenType scanner(FILE *fp, int line)
 	     lookahead = 'w';
 	  }
 
-	  else if (isalpha(lookahead))
+	  else if (isalpha(lookahead) || lookahead == '_')
 	  {
 	     lookahead = 'l';
 	  }

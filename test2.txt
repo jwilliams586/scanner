@@ -1,0 +1,9 @@
+& First list of all separetd by spaces to make sure nothing is missing
+qwerty uiop asdfg hjkl zxcv bnm a12345 a67890 a_ a_b
+Start Stop Then If Iff While Var Int Float Do Read Write Void Return Dummy Program
+= == < > !  +  -  *  / %  =< =>
+. (  ) , { } ; [ ] :
+12345 67890 001
+& now some tokens without space separators
+Start_ Start.Stop Start+Stop Then=If If==Iff WhileInt start stop
+x=a x==a x<=1 x>=2 x,y(z){x;y:u}[1,2,3].
